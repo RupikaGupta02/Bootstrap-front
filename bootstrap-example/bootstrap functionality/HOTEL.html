@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOTEL</title>
+
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+
+</head>
+<body>
+
+    <h1 class=" d-flex justify-content-center">Flipkart</h1>
+
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <button type="button" class="nav-link active" data-bs-toggle="tab" data-bs-target="#class1">Customer
+                Info</button>
+        </li>
+        <li class="nav-item ">
+            <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#class2">Select Room
+                Type</button>
+        </li>
+        <li class="nav-item">
+            <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#class3">Select
+                Amenities</button>
+        </li>
+        <li class="nav-item">
+            <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#class4">Advance Amount
+            </button>
+        </li>
+        <li class="nav-item">
+            <button class="btn btn-primary w-100" data-bs-target="#login" data-bs-toggle="modal"> Place Order</button>
+
+        <div class="modal fade" id="login">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header fw-bold  fs-1 bg-info">
+                        <span class=" bi bi-person-fill">User name</span>
+                        <button class="btn btn-close fs-3" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ol class="list-unstyled text-black">
+                            <li>CustomerName</li>
+                            <li>Mobile</li>
+                            <li>Meal</li>
+                            <li>Add on's</li>
+                            <li>Total</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane fade m-5" id="class1">
+            <dl class="d-flex justify-content-around">
+                <dd>
+                <dt> Customer Name: </dt>
+                <input type="text" name="" id="">
+                </dd>
+            </dl>
+
+            <dl class="d-flex justify-content-around">
+                <dd>
+                <dt> Check in Date: </dt>
+                <input type="date" name="" id="">
+                </dd>
+            </dl>
+            <dl class="d-flex justify-content-around">
+                <dd>
+                <dt> Total No of Days: </dt>
+                <input type="number" name="" id="">
+                </dd>
+            </dl>
+
+            <dl class="d-flex justify-content-around">
+                <dd>
+                <dt> Total No of Persons: </dt>
+                <input type="number" name="" id="">
+                </dd>
+
+            </dl>
+
+
+        </div>
+        <div class="tab-pane fade m-5 " style="display: flex ; justify-content:space-between;" id="class2">
+            <div>
+                <img src="/public/images/hotel france.jpg" width="200" height="200">
+                <div> <input type="radio" class="form-check-input"><span>Delux Room</span>
+                </div>
+            </div>
+            <div>
+                <img src="/public/images/suite1.jpg" width="200" height="200">
+                <div> <input type="radio" class="form-check-input"><span>Suite Room</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade m-5" style="display: flex ; justify-content:space-between;" id="class3">
+            <div>
+                <img src="/public/images/suite2.jpg" width="200" height="200">
+                <div> <input type="radio" class="form-check-input"><span>A/c Room</span>
+                </div>
+            </div>
+            <div>
+                <img src="/public/images/suite3.jpg" width="200" height="200">
+                <div> <input type="radio" class="form-check-input"><span>Locker Room</span>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade m-5" id="class4">
+
+            <dl class="d-flex justify-content-around">
+                <dd>
+                <dt>Advance Amount</dt> 
+                <input type="number" name="" id="">
+                </dd>
+            </dl>
+        </div>
+
+    </div>
+
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>
